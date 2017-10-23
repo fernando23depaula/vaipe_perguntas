@@ -1,0 +1,543 @@
+ $branco 	: #fff;
+ $font15	: 15px;
+ html{
+ 	body{
+ 		font-family: 'Rubik';
+ 		font-size: 16px;
+ 		.center-important{
+ 			margin:0 auto !important;
+ 		}
+		header{
+			height: 239px;
+			background-image: linear-gradient(to top, #775abc, #422e86);
+			nav{
+				&.navbar {					
+				  	background-color: transparent;
+				  	font-size: $font15;
+				  	div{
+				  		ul{
+					  		li.nav-item{
+					  			a{
+					  				&.nav-link{
+					  					color:$branco;
+						  				font-weight: 300;
+						  				padding-left: 15px;
+			    						padding-right: 15px;
+			    						&:hover,&:focus,&:active{
+			    							outline:none;
+			    							color:#25d194;
+			    						}
+					  				}
+					  			}
+					  			&.active{
+					  				a{
+					  					color:#25d194;
+					  				}
+					  			}
+					  		}
+					  	}
+				  	}
+				  	form{
+				  		background-color: transparent;
+				  		color:$branco;
+				  		font-weight: 300;
+				  		font-size: $font15;	
+				  		button{
+				  			cursor: pointer;
+				  			&:active,&:focus,&:hover,&:visited{
+				  				outline: none;
+				  			}
+				  			&#entrar{
+								background-color: transparent;
+								color:$branco;
+								border:none;
+				  			}
+				  			&.btn{
+				  				border:1px solid $branco;
+					  			color:$branco;
+					  			background-color: transparent;
+					  			font-weight: 300;
+					  			font-size: $font15;
+					  			outline: none;
+					  		}
+				  		}
+				  	}
+				}
+			}
+			h1{
+				margin-top: 68px;
+				margin-bottom: 40px;
+				color:$branco;
+				font-weight: 400;
+				font-family: 'Rubik';
+				font-size: 4.000em;
+				padding:0 2px;
+				@media screen and(max-width:576px){
+					font-size: 2em;
+				}
+				@media screen and(min-width:577px) and (max-width:992px){
+					font-size: 3em;
+				}
+			}
+		}
+		main{
+			padding:30px 0;
+			#manifestoMain{
+				max-width: 626px;
+				div{
+					margin-bottom: 30px;
+					&:first-child{
+						margin-top: 30px;
+					}
+					.icone{
+
+					}
+					.tituloBlocos {
+						font-size: 26px;
+						font-weight: 300;
+						letter-spacing: 0.4px;
+						text-align: center;
+						color: #422e86;
+						text-transform: uppercase;
+						max-width: 560px;
+						padding:0 5px;
+						margin:15px auto 10px auto;
+						@media screen and(max-width:576px){
+							font-size: 1.2em;
+						}
+						@media screen and(min-width:577px) and (max-width:992px){
+							font-size: 2em;
+						}
+					}
+					.conteudoManifesto{
+					    font-size: 15px;
+						font-weight: 300;
+						line-height: 1.33;
+						letter-spacing: 0.3px;
+						text-align: justify;
+						color: #383838;
+					}
+				}
+			}
+			#termosDeUso{
+				div{
+					margin-bottom: 25px;
+					h3{
+						font-size: 26px;
+						font-weight: 300;
+						letter-spacing: 0.4px;
+						text-align: left;
+						color: #422e86;
+						margin-bottom: 15px;
+					}
+					p{
+						font-size: 15px;
+						font-weight: 300;
+						line-height: 1.33;
+						letter-spacing: 0.3px;
+						text-align: justify;
+						color: #383838;
+					}
+				}
+			}
+			#secaoComeceAgora{
+				#chamada-principal{
+					@media screen and (min-width: 1200px){
+						width: 952px;
+						margin:0 auto;
+					}
+					#bloco-verde{
+						width: 131px;
+						height: 101px;
+						border-radius: 8px 0px 0px 8px;
+						background-color: #25d194;
+					}
+					#container-bloco-controladores{
+						position: relative;
+						display: table;
+						width: 821px;
+						height: 101px;
+						opacity: 0.9;
+						border-radius: 0px 8px 8px 0px;
+						background-color: #7b5fc9;
+						#bloco-colaboladores{
+							display: table-cell;
+							width: 100%;
+							vertical-align: middle;
+							p{
+								font-size: 26px;
+								letter-spacing: 0px;
+								text-align: left;
+								color: $branco;;
+								font-weight: 400;
+								padding-left:9px;
+								margin-bottom: 5px;
+								font-weight: 400;
+								height:31px;
+							}
+							ul{
+								color:#25d194;
+								padding-left:26px;
+								position:relative;
+								display: inline-block;
+								margin-bottom: 0;
+								li{
+									font-size: 15px;
+								}							
+							}
+							#botaoDivisoria{
+								position: relative;
+								margin-top: 8px;
+								span{
+									font-weight: 400;
+									color:$branco;;
+									&.divisoria{
+										position:absolute;
+										width: 1px;
+										top: -14px;
+										left: -34px;
+										display: inline-block;
+										background-color:$branco;
+										height: 73px; 
+									}
+								}
+								#comeceAgora{
+									border:none;
+									color:$branco;
+									width: 213.6px;
+									height: 44px;
+									border-radius: 2.4px;
+									background-color: #25d194;
+									box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.16);
+									margin-right: 33.4px;
+								}
+							}
+						}
+					}
+				}
+			}
+			#sectionPlanos{
+				background-image: linear-gradient(to top, #775abc, #9782e1);
+				padding-top:50px;
+				margin-top:30px;
+				h2{
+					height: 28px;
+					font-weight:400;
+					font-size: 33px;
+					line-height: 0.85;
+					letter-spacing: 0.6px;
+					text-align: center;
+					color: #ffffff;
+					margin-bottom:9px;
+				}
+				div.linhaBranca{
+					width: 39px;
+					display: block;
+					border-radius:5px;
+					height:4px;
+					margin:0 auto 30px auto;
+					background-color:$branco;
+				}
+				#containerTabelaPlanos{
+					padding-bottom:25px;
+					max-width:1042px;
+					.tabelaPlano{
+						max-width:316px;
+						margin-right:32px;
+						&:last-child{
+							margin-right:0;
+						}
+						p#queridinho{
+							margin:15px 0;
+							text-transform:uppercase;
+							text-align:center;
+							color:#433582;
+						}
+						&.tabelaCentral{
+							border-radius: 8px;
+							padding-bottom:25px;
+  							background-color: #fde584;
+  							.containerPlanoTable{
+  								background-color:#624aa7;
+								margin-top:0px;
+  							}
+						}
+						.containerPlanoTable{
+							width: 282px;
+							height: 638px;
+							border-radius: 8px;
+							background-color: rgba(66,46,134,0.45);
+							color:$branco;
+							margin:0 auto;
+							margin-top:54px;
+							.faleComConsultor{
+								width: 213.6px;
+	  							height: 44px;
+	  							border-radius: 2.4px;
+	  							border:none;
+	  							color:$branco;
+	  							margin: 20px auto 11px auto;
+	  							display: block;
+	  							background-color: #25d193;
+	  							box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.16);
+							}
+							.saibaMais{
+								font-weight: 400;
+								display: block;
+								width: 100%;
+								text-align:center;
+								height: 20px;
+								font-size: 15px;
+								line-height: 1.33;
+								text-align: center;
+								color: #ffffff;
+							}
+							.blocoIconeNome{
+								width: 155px;
+								height: 90px;
+								border-radius: 0px 0px 8px 8px;
+								margin:0 auto 0 auto;
+								background-color: rgba(37, 209, 148,0.8);
+								.tituloPlano{
+									font-size: 23px;
+									letter-spacing: 0px;
+									text-align: center;
+									font-weight: 400;
+								}
+							}
+							.divisoria{
+								width: 248px;
+								background-color: $branco;
+								height: 1px;
+								display: block;
+								margin:0 auto;
+							}
+							.tabelaBloco1,.tabelaBloco2,.tabelaBloco3{
+								display: table;
+								width:100%;
+								ul{
+									padding-left: 26px;
+									color:#25d194;
+									font-size: 15px;
+	  								line-height: 1.33;
+	  								text-align: left;
+	  								margin-bottom:0;
+	  								li{
+	  									span{
+	  										color:$branco;
+	  										font-weight: 400;
+	  									}
+	  								}
+								}
+								p{
+									font-size: 13px;
+									padding-left: 26px;
+									font-weight: 300;
+									line-height: 1.54;
+									text-align: left;
+									margin-bottom:0;
+									font-family: 'Rubik';
+									margin-bottom:10px;
+									&:last-child{
+										margin-bottom:0;
+									}
+								}
+								.conteudoBloco{
+									display: table-cell;
+									vertical-align: middle;
+									width:100%;
+									.ladoDireito{
+										width: 124px;
+										margin-right:12px;
+	    								text-align: right;
+	    								padding-top: 5px;
+										p{
+											position: relative;
+											padding-left:0;
+											&.porColaborador{
+												position: relative;
+											    span{
+											    	&.topText.quebra{
+													    position: absolute;
+													    top: -3px;
+													    right: -49px;
+													}
+											    }
+											}
+											&.preco{
+												// vertical-align: text-top;
+											    height: 26px;
+											    line-height: 0.7;
+											    display: table-cell;
+												span{
+													&.upperValor{
+														font-size: 40px;
+														letter-spacing:-2px;
+													}
+													&.topText{
+														vertical-align: top;
+														letter-spacing: 1.1px;
+													}
+													&.quebra{
+														max-width: 66px;
+														line-height: 1;
+														font-size: 10px;
+														display: inline-block;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							.tabelaBloco1{
+								min-height: 182px;
+							}
+							.tabelaBloco2{
+								min-height: 116px;
+							}
+							.tabelaBloco3{
+								min-height:138px;
+							}
+						}
+					}
+				}				
+			}
+			#historiaSucesso{
+				h2{
+					height: 28px;
+					font-size: 33px;
+					line-height: 0.85;
+					letter-spacing: 0.6px;
+					text-align: center;
+					color: #422e86;
+					font-weight:400;
+					margin-top:50px;
+				}
+				.linhaVerde{
+					width: 39px;
+					display: block;
+					border-radius:5px;
+					height:4px;
+					margin:0 auto 30px auto;
+					background-color:#0ecc86;
+				}
+				.historia{
+					display: block;
+					max-width: 941px;
+					margin:0 auto 30px auto;
+					padding:20px 55px;
+					border-radius: 7px;
+					background-color: rgba(108, 78, 182, 0.06);
+					border: solid 1px rgba(108, 78, 181, 0.54);
+					&:first-child{
+						margin-top:47px;
+					}
+					h3{
+						font-size: 33px;
+						line-height: 0.85;
+						letter-spacing: 0.6px;
+						text-align: left;
+						color: #6c4eb6;
+						margin:20px 0;
+					}
+					.media{
+						.media-body{
+							p{
+								font-size: 15px;
+								font-weight: 300;
+								line-height: 1.2;
+								text-align: justify;
+								color: #383838;
+							}
+							button{
+								color:$branco;
+								border:none;
+								width: 214px;
+								height: 44px;
+								border-radius: 2.4px;
+								background-color: #25d194;
+								box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.16);
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		footer{
+		  height: 325px;
+		  div{
+		  	&#footer1{
+			  	background-image: -webkit-linear-gradient(bottom, #775abc, #422e86);
+			  	background-image: -o-linear-gradient(bottom, #775abc, #422e86);
+			  	background-image: linear-gradient(to top, #775abc, #422e86);
+			  	margin:0 auto !important;
+		  	}
+		  	&#footer2{
+
+				background-color: #1e143e;
+		  	}
+		  	&.container-fluid{
+			  	div.row{
+			  		padding-top: 23px;
+			  		&#itens-lista{
+						margin:0 auto !important;
+			  		}
+					&#itens-texto{
+						margin:0 auto !important;
+						p{
+							font-size: 14px;
+							font-weight: 300;
+						}
+					}
+			  		div{
+			  			color:$branco;
+			  			h3{
+			  				font-size: 14px;
+			  				font-weight: 400;
+			  			}
+			  			div.centralizar{
+			  				width: 179px;
+			  				display: block;
+			  				margin:0 auto;
+				  			img{
+				  				margin-bottom:11px;
+				  			}
+				  			p{
+			  					font-weight: 300;
+			  					font-size: 14px;
+			  					color:$branco;
+			  					text-align: justify;
+			  				}
+			  			}
+			  			ul{
+			  				list-style-type:none;
+			  				padding-left: 0;
+			  				li{
+			  					a{
+			  						font-weight: 300;
+			  						color:$branco;
+			  						font-size: 14px;
+			  						display: block;
+			  						padding-bottom: 14px;
+			  						text-decoration: none;
+			  						&:active,&:focus,&:hover,&:visited{
+			  							text-decoration: none;
+			  						}
+			  					}
+			  				}
+			  			}
+			  			div{
+			  				p{
+			  					font-weight: 300;
+			  					font-size: 14px;
+			  				}
+			  			}
+			  		}
+			  	}
+		  	}
+		  }
+		}
+ 	}
+ }
