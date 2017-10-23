@@ -64,6 +64,7 @@ $(document).ready(function(){
 			}
 			$('#linhaPergunta2').fadeOut('slow');
 			$('#respostaEnviadaComSucesso').fadeIn('slow');
+			
 
 			// $.post('http://studios7design.com.br/jsonApp/teste.php',dadosParaEnvio,function(response, status){
 			// 	if(status == "success"){
