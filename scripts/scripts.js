@@ -62,15 +62,17 @@ $(document).ready(function(){
 				reposta_2 : valorResposta2Alternativas,
 				comentario_2 : valorComentarioAlternativas2
 			}
-			
-			$.post('http://studios7design.com.br/jsonApp/teste.php',dadosParaEnvio,function(response, status){
-				if(status == "success"){
-					$('#linhaPergunta2').fadeOut('slow');
-					$('#respostaEnviadaComSucesso').fadeIn('slow');
-				}else{
-					alert('Ocorreu um erro tente outra vez');
-				}
-			});
+			$('#linhaPergunta2').fadeOut('slow');
+			$('#respostaEnviadaComSucesso').fadeIn('slow');
+
+			// $.post('http://studios7design.com.br/jsonApp/teste.php',dadosParaEnvio,function(response, status){
+			// 	if(status == "success"){
+			// 		$('#linhaPergunta2').fadeOut('slow');
+			// 		$('#respostaEnviadaComSucesso').fadeIn('slow');
+			// 	}else{
+			// 		alert('Ocorreu um erro tente outra vez');
+			// 	}
+			// });
 		}else{
 			$('p.msg-error').fadeIn("slow");
 			$('p.msg-error').fadeIn("slow");						

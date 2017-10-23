@@ -58,6 +58,7 @@
 						<p class="border border-danger msg-error text-danger">Selecione uma das alternativas</p>
 						<div class="btn-toolbar listaBotoesNotas" role="toolbar" aria-label="Toolbar with button groups">
 						  <div class="btn-group mr-2" role="group" aria-label="First group" id="listaBotoes">
+						    <button type="button" class="btn btn-secondary">0</button>
 						    <button type="button" class="btn btn-secondary">1</button>
 						    <button type="button" class="btn btn-secondary">2</button>
 						    <button type="button" class="btn btn-secondary">3</button>
