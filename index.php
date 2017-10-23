@@ -58,17 +58,17 @@
 						<p class="border border-danger msg-error text-danger">Selecione uma das alternativas</p>
 						<div class="btn-toolbar listaBotoesNotas" role="toolbar" aria-label="Toolbar with button groups">
 						  <div class="btn-group mr-2" role="group" aria-label="First group" id="listaBotoes">
-						    <button type="button" class="btn btn-secondary">0</button>
-						    <button type="button" class="btn btn-secondary">1</button>
-						    <button type="button" class="btn btn-secondary">2</button>
-						    <button type="button" class="btn btn-secondary">3</button>
-						    <button type="button" class="btn btn-secondary">4</button>
-						    <button type="button" class="btn btn-secondary">5</button>
-						    <button type="button" class="btn btn-secondary">6</button>
-						    <button type="button" class="btn btn-secondary">7</button>
-						    <button type="button" class="btn btn-secondary">8</button>
-						    <button type="button" class="btn btn-secondary">9</button>
-						    <button type="button" class="btn btn-secondary">10</button>
+						    <button type="button" class="btn resposta0 btn-secondary">0</button>
+						    <button type="button" class="btn resposta1 btn-secondary">1</button>
+						    <button type="button" class="btn resposta2 btn-secondary">2</button>
+						    <button type="button" class="btn resposta3 btn-secondary">3</button>
+						    <button type="button" class="btn resposta4 btn-secondary">4</button>
+						    <button type="button" class="btn resposta5 btn-secondary">5</button>
+						    <button type="button" class="btn resposta6 btn-secondary">6</button>
+						    <button type="button" class="btn resposta7 btn-secondary">7</button>
+						    <button type="button" class="btn resposta8 btn-secondary">8</button>
+						    <button type="button" class="btn resposta9 btn-secondary">9</button>
+						    <button type="button" class="btn resposta10 btn-secondary">10</button>
 						  </div>
 						</div>
 						<p class="comentario">Tem algum comentário sobre sua reposta? <small>Opcional.</small></p>

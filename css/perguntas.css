@@ -259,55 +259,51 @@ html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .
   border: none;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.ativosPorDemanda {
-  background-color: #ff5656;
-}
-
 html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button:last-child {
   margin-right: 0;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta0 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta0.ativosPorDemanda {
   background-color: #F1474C;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta1 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta1.ativosPorDemanda {
   background-color: #DA4351;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta2 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta2.ativosPorDemanda {
   background-color: #BB3E95;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta3 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta3.ativosPorDemanda {
   background-color: #9F3961;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta4 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta4.ativosPorDemanda {
   background-color: #853568;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta5 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta5.ativosPorDemanda {
   background-color: #6B306F;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta6 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta6.ativosPorDemanda {
   background-color: #532B75;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta7 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta7.ativosPorDemanda {
   background-color: #3C277D;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta8 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta8.ativosPorDemanda {
   background-color: #2E6582;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta9 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta9.ativosPorDemanda {
   background-color: #229083;
 }
 
-html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button .resposta10 {
+html body main div#ajusteMain div.marginNegativa .containerPerguntas .pergunta .listaBotoesNotas .btn-group button.resposta10.ativosPorDemanda {
   background-color: #25D194;
 }
 
