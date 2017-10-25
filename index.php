@@ -12,7 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	<script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="scripts/scripts.js"></script>
+	
+	
 </head>
 <body>
 	<header>
@@ -34,10 +35,10 @@
 					<div class="pergunta" id="pergunta1">
 						<h3>Você se sente parte de uma equipe de alta performance?</h3>
 						<p class="border border-danger msg-error text-danger">Selecione uma das alternativas</p>
-						<button type="button">Não</button>
-						<button type="button">Sim</button>
+						<button type="button" id="nao" class="naoPerguntas">Não</button>
+						<button type="button" id="sim" class="simPerguntas">Sim</button>
 						<p class="comentario">Tem algum comentário sobre sua reposta? <small>Opcional.</small></p>
-						<div class="form-group"><input class="fonts_input" type="text" id="comentarioAlternativas" placeholder="Acredito que minha equipe seja de alta performance sim!"></div>
+						<div class="form-group"><input class="fonts_input" type="text" id="comentarioAlternativas" placeholder="Escreva aqui seu comentário"></div>
 					</div>
 				</div>
 				<div class="tamanhoContainer">
@@ -53,9 +54,18 @@
 			</div>
 			<div class="marginNegativa displayNone displayNone" id="linhaPergunta2">
 				<div class="containerPerguntas avaliacaoNumerica row tamanhoContainer">
+					<div class="lineInformacao">
+						<div class="informacao">
+							<p>
+								<img src="img/icones/resposta_anonima_icone.svg" alt="Resposta anonima"><span>Resposta anonima</span>
+								<button class="ovalInterrogacao"  data-container="body" data-toggle="popover" data-placement="top" data-content="Ninguém saberá que foi você quem deu esta resposta.">!</button>
+							</p>
+						</div>
+					</div>
+					<div class="checked-right"></div>
 					<div class="pergunta">
-						<h3>De 0 a 10, qual a probabilidade de você indicar um familiar ou amigo qualificado para uma vaga na sua empresa?</h3>
-						<p class="border border-danger msg-error text-danger">Selecione uma das alternativas</p>
+						<h3 class="h3Questoes">De 0 a 10, qual a probabilidade de você indicar um familiar ou amigo qualificado para uma vaga na sua empresa?</h3>
+						<p class="border border-danger msg-error text-danger" id="errorNotas">Selecione uma das alternativas</p>
 						<div class="btn-toolbar listaBotoesNotas" role="toolbar" aria-label="Toolbar with button groups">
 						  <div class="btn-group mr-2" role="group" aria-label="First group" id="listaBotoes">
 						    <button type="button" class="btn resposta0 btn-secondary">0</button>
@@ -72,16 +82,34 @@
 						  </div>
 						</div>
 						<p class="comentario">Tem algum comentário sobre sua reposta? <small>Opcional.</small></p>
-						<div class="form-group"><input class="fonts_input" type="text" id="comentarioAlternativas2" placeholder="Estou bem engajado!"></div>
+						<div class="form-group"><input class="fonts_input" type="text" id="comentarioAlternativas2" placeholder="Escreva aqui seu comentário"></div>
+					</div>
+				</div>
+				
+				<div class="containerPerguntas avaliacaoNumerica row tamanhoContainer" id="liderEscolhido">
+					<div class="lineInformacao">
+						<div class="informacao">
+							<p><img src="img/icones/saberao_que_e_voce_icone.svg" id="icone2liberado" alt="Resposta anonima"><span id="span2">Saberão que é você</span>
+								<button class="ovalInterrogacao" id="botao2informacao" data-container="body" data-toggle="popover" data-placement="top" data-content="Os admistradores da plataforma e seu colega saberão que foi você quem deu esta resposta.">!</button></p>
+						</div>
+					</div>
+					<div class="checked-right"></div>					
+					<div class="pergunta">
+						<h3 class="h3Questoes">Quem é o(a) colega ou líder que te inspirou dentro da empresa este mês?</h3>
+						<p class="border border-danger msg-error text-danger" id="errorColega">Digite o nome do seu colega ou líder</p>
+						<form-group id="colaboradorNome">
+							<label for="nomeColaborador">Buscar pelo nome:</label>
+							<input type="text" name="nomeColaborador" id="nomeColaborador">
+						</form-group>
+						
+						<p class="comentario" id="comentarioColaboradorNome">Gostaria de compartilhar um comentário com o(a) colega?</p>
+						<div class="form-group"><input class="fonts_input" type="text" id="comentarioColaboradorNome" placeholder="Escreva aqui seu comentário"></div>
 					</div>
 				</div>
 				<div class="tamanhoContainer">
 					<button type="button" class="float-right enviarButton" id="enviarResposta2">Enviar</button>
 					<div class="clearfix"></div>
 				</div>
-				<script>
-
-				</script>
 			</div>
 			<div class="marginNegativa displayNone" id="perguntaEncerrada">
 				<div class="containerPerguntas perguntaEncerraRespostaEnviada row tamanhoContainer">
@@ -95,7 +123,7 @@
 			<div class="marginNegativa displayNone" id="respostaEnviadaComSucesso">
 				<div class="containerPerguntas perguntaEncerraRespostaEnviada row tamanhoContainer">
 					<div class="pergunta" >
-						<h3>Resposta enviada com sucesso!</h3>
+						<h3>Resposta enviada com sucesso! <img src="img/icones/icone_verde.svg" alt=""></h3>
 						
 						<p class="comentario">Quer ajudar a acabar com o climão em outras empresas? Indique a gente e ganhe um voucher de R$100 para gastar como quiser!</p>
 
@@ -155,4 +183,7 @@
 		</div>
 	</footer>
 </body>
+<script src="scripts/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </html>	
