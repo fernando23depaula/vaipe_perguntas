@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+	$('input').focus(function(){
+		$(this).closest('.tamanhoContainer').addClass('cardSelecionado');
+	});
+	$('input').focusout(function(){
+		$(this).closest('.tamanhoContainer').removeClass('cardSelecionado');
+	});
+
 	// Validação Sim ou Não
 	valorResposta1Alternativas = '';
 	valorComentarioAlternativas= '';
@@ -34,7 +41,11 @@ $(document).ready(function(){
 		$(this).addClass('ativoNota');
 		$(this).prevAll().addClass('ativosPorDemanda');
 		$(this).nextAll().addClass('ativosPorDemanda');
+		$('.ativoNota').parent().parent().parent().siblings('.checked-right').css({'background':'#25d194'});
 	});
+	// $('.nomeColab').blur(function(){
+	// 	$('.nomeColab').parent().parent().siblings('.checked-right').css({'background':'#25d194'});	
+	// });
 
 	$('#enviarResposta1').click(function(){
 		validaResposta1();		
@@ -77,6 +88,7 @@ $(document).ready(function(){
 				$('#linhaPergunta2').fadeOut('slow');
 				$('#respostaEnviadaComSucesso').fadeIn('slow');
 				$('#ajusteMain').removeClass('ajusteMain');
+				$('.nomeColab').parent().parent().siblings('.checked-right').css({'background':'#25d194'});	
 			}else{
 				$('#errorColega').fadeIn();
 			}
